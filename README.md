@@ -1,19 +1,31 @@
-# UniSphere - Web Technologies Assignment 01
+# UniSphere | Web Technologies Assignment 03
 
-Student: Maryam Nasir  
-Roll Number: AI-09  
-University: University of Engineering & Technology (UET)
+**Student:** Maryam Nasir | **Roll:** AI-09 | **University:** UET Lahore
 
-## How to run
-Open `index.html` directly, or use VS Code Live Server for the best experience.
+## Run
+Open the **whole project folder** in VS Code, then right-click `index.html` and choose **Open with Live Server**. Do not move HTML files out of their folders. All links use the supplied structure. Internet is needed for the Axios CDN and public API.
 
-## Authentication demo
-- Sign Up stores a demo account in browser `localStorage`.
-- Sign In validates the stored email/password and creates a browser session.
-- Remember Me, Show/Hide Password, Forgot Password demo, and Logout are implemented.
+## Assignment 03 features
+- Existing five pages maintained, with CSS paths resolving to `css/styles.css`.
+- Dashboard (`src/pages/dashboard.html`) accessible from every navbar.
+- Create, read, update, delete study tasks using a JavaScript array of objects.
+- Local Storage key `unis_study_tasks_v1`; records survive refresh in the same browser.
+- Search by title/course/notes, status and priority filters using `filter`, `some`, `find`, `map`.
+- Axios GET to `https://jsonplaceholder.typicode.com/posts?_limit=6`, rendered into cards with loading and error handling.
+- Responsive styling and validation. Sign-in is a **browser-only academic demo**, not secure production authentication.
 
-## Contact form
-The form is fully validated and stores submissions in browser `localStorage` so it works without a backend. For the assignment's production Formspree requirement, replace the demo handler in `js/contact.js` with your own Formspree form endpoint after creating a free Formspree form.
+## Screenshots to take for LMS
+1. Expanded VS Code folder tree.
+2. Dashboard with a newly added task.
+3. Edit task and saved updated task.
+4. Delete task and list after deletion.
+5. Search and filter results.
+6. Refresh browser and show saved task still present.
+7. Live API cards with success status.
 
-## Tailwind
-Every page loads Tailwind CSS through the official CDN and uses Tailwind utility classes alongside a small custom stylesheet for a distinctive, consistent visual identity.
+## GitHub Pages
+Push this entire folder's **contents** to your existing GitHub repository (keep `index.html` at repository root). Repository > Settings > Pages > Deploy from a branch > main / (root) > Save. Wait for the Pages URL and test the dashboard and API. Subsequent commits to `main` update the site. **Links cannot be provided until you publish from your account.**
+
+## API
+JSONPlaceholder free public test API: https://jsonplaceholder.typicode.com/guide/
+Axios CDN: https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js
